@@ -1,0 +1,13 @@
+# Maven specific
+target/
+.mvn/wrapper
+
+# VSCode
+.vscode/
+
+# Eclipse
+.settings/
+.project
+.classpath
+bin/
+
