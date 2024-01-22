@@ -1,4 +1,4 @@
-package main.City_Connection;
+package main.java.com.example.CityConnection;
 
 import java.util.ArrayList;
 import java.util.Arrays;
