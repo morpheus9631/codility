@@ -1,4 +1,4 @@
-package com.codility.decimal_zip;
+package com.codility;
 
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
