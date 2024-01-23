@@ -1,6 +1,6 @@
-package main.java.com.example.DecimalZipProblem;
+package com.codility.decimal_zip;
 
-public class Solution001 implements Solution
+public class Solution01 implements Solution
 {
   public int solution(int A, int B) 
   {

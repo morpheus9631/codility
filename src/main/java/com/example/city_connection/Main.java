@@ -1,15 +1,16 @@
-package main.java.com.example.CityConnection;
+package com.codility.city_connection;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import com.codility.city_connection.Solution01;
 
-public class main003
+public class Main
 {
 	public static void main(String[] args)
 	{
-		Solution003 sol = new Solution003();
+		Solution01 sol = new Solution01();
 		TestCase tc = new TestCase();
 		
 		String format1 = "\r\nInput: %s";
