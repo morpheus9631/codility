@@ -1,0 +1,9 @@
+package com.example.CountVisibleNodesInBinaryTree;
+
+import com.example.CountVisibleNodesInBinaryTree.Tree;
+
+public interface TestCase 
+{
+  public Tree getCase();
+  public int  getReturn();
+}
