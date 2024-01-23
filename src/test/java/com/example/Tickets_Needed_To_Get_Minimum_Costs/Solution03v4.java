@@ -14,7 +14,7 @@ public class Solution03v4  implements Solution03
     if (len == 0) return -1;
 
     // if total traveling days lower than 3, buy individual day ticket is better
-    if (len <= 3) return len * dayCost; // 少�?��?�於 3 次�?�買?��票�?��?�便�?
+    if (len <= 3) return len * dayCost; 
     
     int cost[] = new int[len];
 
@@ -26,7 +26,6 @@ public class Solution03v4  implements Solution03
       
       if (endIdx-startIdx > ratio_WeekAndDays)
       {
-        // 如�?��??續出差�?��?��??��，�?��?�買�?次周票�?�剩下�?��?��?��??
         /* if continued traveling days more than 7, purchase week ticket first, 
          * then consequence deal with the remainder traveling days
          */

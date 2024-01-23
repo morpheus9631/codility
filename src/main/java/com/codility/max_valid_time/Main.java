@@ -1,8 +1,7 @@
-package com.example.Maximum_valid_time;
+package com.codility.max_valid_time;
 
 public class Main
 {
-
   public static void main(String[] args)
   {
     System.out.println("Find max valid military time:");
@@ -13,7 +12,7 @@ public class Main
     
     int[][] testcase = getTestCase(); 
 
-    Solution sol = new Solution002();
+    Solution sol = new Solution02v2();
     
 
     for (int[] nums : testcase)
