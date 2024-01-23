@@ -1,4 +1,4 @@
-package main.FindSmallestNotExistPositiveInteger;
+package com.example.FindSmallestNotExistPositiveInteger;
 
 import java.util.Arrays;
 

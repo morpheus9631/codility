@@ -1,4 +1,4 @@
-package main.SplitTextIntoEqualLengthSubstrings;
+package com.example.SplitTextIntoEqualLengthSubstrings;
 
 public interface Solution001
 {

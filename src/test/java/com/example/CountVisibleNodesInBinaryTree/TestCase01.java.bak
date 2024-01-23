@@ -1,6 +1,6 @@
-package main.CountVisibleNodesInBinaryTree;
+package com.example.CountVisibleNodesInBinaryTree;
 
-import main.CountVisibleNodesInBinaryTree.Tree;
+import com.example.CountVisibleNodesInBinaryTree.Tree;
 
 public class TestCase01 implements TestCase 
 {

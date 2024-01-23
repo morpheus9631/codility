@@ -1,4 +1,4 @@
-package main.MaximizeSumOfTwoDisjoingSubsets;
+package com.example.MaximizeSumOfTwoDisjoingSubsets;
 
 import java.util.ArrayList;
 import java.util.Arrays;

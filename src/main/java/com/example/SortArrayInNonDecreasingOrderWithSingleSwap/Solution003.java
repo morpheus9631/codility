@@ -1,4 +1,4 @@
-package main.SortArrayInNonDecreasingOrderWithSingleSwap;
+package com.example.SortArrayInNonDecreasingOrderWithSingleSwap;
 
 public class Solution003
 {

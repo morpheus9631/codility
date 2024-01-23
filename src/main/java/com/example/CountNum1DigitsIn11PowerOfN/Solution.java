@@ -1,4 +1,4 @@
-package main.CountNum1DigitsIn11PowerOfN;
+package com.example.CountNum1DigitsIn11PowerOfN;
 
 public class Solution 
 {

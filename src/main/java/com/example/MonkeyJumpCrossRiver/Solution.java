@@ -1,4 +1,4 @@
-package main.MonkeyJumpCrossRiver;
+package com.example.MonkeyJumpCrossRiver;
 
 import java.util.Arrays;
 

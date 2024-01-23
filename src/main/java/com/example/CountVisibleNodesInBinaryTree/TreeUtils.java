@@ -1,4 +1,4 @@
-package main.CountVisibleNodesInBinaryTree;
+package com.example.CountVisibleNodesInBinaryTree;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

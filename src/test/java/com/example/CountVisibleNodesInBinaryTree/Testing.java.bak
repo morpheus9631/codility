@@ -1,11 +1,11 @@
-package main.CountVisibleNodesInBinaryTree;
+package com.example.CountVisibleNodesInBinaryTree;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-import main.CountVisibleNodesInBinaryTree.Solution;
-import main.CountVisibleNodesInBinaryTree.Tree;
+import com.example.CountVisibleNodesInBinaryTree.Solution;
+import com.example.CountVisibleNodesInBinaryTree.Tree;
 
 class Testing 
 {

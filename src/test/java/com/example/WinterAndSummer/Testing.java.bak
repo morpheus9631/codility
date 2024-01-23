@@ -1,4 +1,4 @@
-package main.WinterAndSummer;
+package com.example.WinterAndSummer;
 
 import static org.junit.jupiter.api.Assertions.*;
 
