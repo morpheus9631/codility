@@ -1,4 +1,4 @@
-package main.java.com.example.CityConnection;
+package com.codility.city_connection;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -7,46 +7,46 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Set;
 
-public class Solution003
+public class Solution01 implements Solution
 {
-  public int[] solution(int[] T) 
-  {
-  	Graph graph = new Graph(T);
+	public int[] solution(int[] T) 
+	{
+		Graph graph = new Graph(T);
 
-  	HashMap<Integer, Set<Integer>> map = graph.get();
-  	
-  	List<Integer> openList  = new LinkedList<Integer>();
-  	List<Integer> closeList = new LinkedList<Integer>();
-  	int[] result = new int[T.length-1];
-  	
-  	int captial = graph._Captial;
-  	openList.add(captial);
-  	
-  	int k = 0;
-  	while (!openList.isEmpty())
-  	{
-  		int size = openList.size();
+		HashMap<Integer, Set<Integer>> map = graph.get();
+		
+		List<Integer> openList	= new LinkedList<Integer>();
+		List<Integer> closeList = new LinkedList<Integer>();
+		int[] result = new int[T.length-1];
+		
+		int captial = graph._Captial;
+		openList.add(captial);
+		
+		int k = 0;
+		while (!openList.isEmpty())
+		{
+			int size = openList.size();
 
-  		int num = 0;
-  		int i = 0;
-  		while (i < size)
-  		{
-  			int key = openList.remove(0);
-  			closeList.add(key);
+			int num = 0;
+			int i = 0;
+			while (i < size)
+			{
+				int key = openList.remove(0);
+				closeList.add(key);
 
-  			Set<Integer> set = map.get(key);
-  			for (int val : set)
-  			{
-  				if (closeList.contains(val)) continue;
-  				num++;
-    			openList.add(val);
-  			}
-  			i++;
-  		}
-  		result[k++] = num;
-  	}
-  	return result;
-  }
+				Set<Integer> set = map.get(key);
+				for (int val : set)
+				{
+					if (closeList.contains(val)) continue;
+					num++;
+					openList.add(val);
+				}
+				i++;
+			}
+			result[k++] = num;
+		}
+		return result;
+	}
 }
 
 class Graph
@@ -92,7 +92,7 @@ class Graph
 		int[] keys = set.stream().mapToInt(Integer::intValue).toArray();
 		Arrays.sort(keys);
 
-		String format = "\r\n  %d = %s";
+		String format = "\r\n	%d = %s";
 		StringBuffer sb = new StringBuffer();
 		for (int key : keys)
 		{
