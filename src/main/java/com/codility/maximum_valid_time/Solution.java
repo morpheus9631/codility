@@ -1,4 +1,4 @@
-package com.example.Maximum_valid_time;
+package com.codility.maximum_valid_time;
 
 public interface Solution
 {
