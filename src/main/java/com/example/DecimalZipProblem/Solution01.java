@@ -1,6 +1,6 @@
-package main.Decimal_ZIP_problem;
+package com.example.DecimalZipProblem;
 
-public class Solution001 implements Solution
+class Solution01
 {
   public int solution(int A, int B) 
   {
