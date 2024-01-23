@@ -3,8 +3,6 @@ package com.codility.decimal_zip;
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
-import com.codility.decimal_zip.Solution01;
-
 public class DecimalZipTest
 {
     private static int[][] testcaseAry = 

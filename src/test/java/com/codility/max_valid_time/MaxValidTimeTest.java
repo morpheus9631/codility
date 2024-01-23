@@ -3,8 +3,6 @@ package com.codility.max_valid_time;
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
-import com.codility.max_valid_time.Solution02v2;
-
 public class MaxValidTimeTest 
 {
     private int[][] testcaseAry = 
