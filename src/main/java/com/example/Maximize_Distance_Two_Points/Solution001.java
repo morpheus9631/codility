@@ -1,4 +1,4 @@
-package main.Maximize_Distance_Two_Points;
+package com.example.Maximize_Distance_Two_Points;
 
 import java.util.ArrayList;
 import java.util.Arrays;

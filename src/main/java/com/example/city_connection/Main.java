@@ -1,10 +1,8 @@
-package com.codility.city_connection;
+package com.example.city_connection;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-
-import com.codility.city_connection.Solution01;
 
 public class Main
 {

@@ -1,4 +1,4 @@
-package com.codility.city_connection;
+package com.example.city_connection;
 
 public class CityConnectionTest 
 {

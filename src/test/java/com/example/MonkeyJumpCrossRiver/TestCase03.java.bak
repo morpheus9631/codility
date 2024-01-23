@@ -1,4 +1,4 @@
-package main.MonkeyJumpCrossRiver;
+package com.example.MonkeyJumpCrossRiver;
 
 public class TestCase03 implements TestCase 
 {

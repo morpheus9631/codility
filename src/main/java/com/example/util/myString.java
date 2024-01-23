@@ -1,4 +1,4 @@
-package main.util;
+package com.example.util;
 
 public class myString
 {

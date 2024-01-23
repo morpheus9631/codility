@@ -1,4 +1,4 @@
-package test.Maximum_valid_time;
+package com.example.Maximum_valid_time;
 
 public class Main02
 {

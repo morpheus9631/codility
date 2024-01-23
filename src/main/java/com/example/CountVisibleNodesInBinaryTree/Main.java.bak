@@ -1,4 +1,4 @@
-package main.CountVisibleNodesInBinaryTree;
+package com.example.CountVisibleNodesInBinaryTree;
 
 public class Main {
 

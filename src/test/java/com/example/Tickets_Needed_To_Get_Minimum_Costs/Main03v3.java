@@ -1,4 +1,4 @@
-package test.Tickets_Needed_To_Get_Minimum_Costs;
+package com.example.Tickets_Needed_To_Get_Minimum_Costs;
 
 import java.util.Arrays;
 

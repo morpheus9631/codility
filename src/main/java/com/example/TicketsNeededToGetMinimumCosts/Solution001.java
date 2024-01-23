@@ -1,4 +1,4 @@
-package main.TicketsNeededToGetMinimumCosts;
+package com.example.TicketsNeededToGetMinimumCosts;
 
 /*
  * Reference:

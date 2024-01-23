@@ -1,4 +1,4 @@
-package main.ShuffledRepresentation;
+package com.example.ShuffledRepresentation;
 
 public class Main
 {

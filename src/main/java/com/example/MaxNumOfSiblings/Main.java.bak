@@ -1,4 +1,4 @@
-package main.MaxNumOfSiblings;
+package com.example.MaxNumOfSiblings;
 
 /*
  * https://www.geeksforgeeks.org/find-maximum-number-can-formed-digits-number-reviewed/

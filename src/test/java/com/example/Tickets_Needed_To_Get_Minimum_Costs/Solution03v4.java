@@ -1,4 +1,4 @@
-package test.Tickets_Needed_To_Get_Minimum_Costs;
+package com.example.Tickets_Needed_To_Get_Minimum_Costs;
 
 public class Solution03v4  implements Solution03
 {
@@ -14,7 +14,7 @@ public class Solution03v4  implements Solution03
     if (len == 0) return -1;
 
     // if total traveling days lower than 3, buy individual day ticket is better
-    if (len <= 3) return len * dayCost; // å°‘æ?–ç?‰æ–¼ 3 æ¬¡æ?‚è²·?—¥ç¥¨æ?”è?ƒä¾¿å®?
+    if (len <= 3) return len * dayCost; // å°‘ï¿½?ï¿½ï¿½?ï¿½æ–¼ 3 æ¬¡ï¿½?ï¿½è²·?ï¿½ï¿½ç¥¨ï¿½?ï¿½ï¿½?ï¿½ä¾¿ï¿½?
     
     int cost[] = new int[len];
 
@@ -26,7 +26,7 @@ public class Solution03v4  implements Solution03
       
       if (endIdx-startIdx > ratio_WeekAndDays)
       {
-        // å¦‚æ?œé??çºŒå‡ºå·®è?…é?ä??‘¨ï¼Œå?‡å?ˆè²·ä¸?æ¬¡å‘¨ç¥¨ï?Œå‰©ä¸‹ç?„å?è?•ç??
+        // å¦‚ï¿½?ï¿½ï¿½??çºŒå‡ºå·®ï¿½?ï¿½ï¿½?ï¿½ï¿½??ï¿½ï¿½ï¼Œï¿½?ï¿½ï¿½?ï¿½è²·ï¿½?æ¬¡å‘¨ç¥¨ï¿½?ï¿½å‰©ä¸‹ï¿½?ï¿½ï¿½?ï¿½ï¿½?ï¿½ï¿½??
         /* if continued traveling days more than 7, purchase week ticket first, 
          * then consequence deal with the remainder traveling days
          */

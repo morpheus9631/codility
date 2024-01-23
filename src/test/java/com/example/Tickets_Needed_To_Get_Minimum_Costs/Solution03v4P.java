@@ -1,4 +1,4 @@
-package test.Tickets_Needed_To_Get_Minimum_Costs;
+package com.example.Tickets_Needed_To_Get_Minimum_Costs;
 
 import java.util.Arrays;
 
@@ -14,8 +14,8 @@ public class Solution03v4P
 
     int len = A.length;
     if (len == 0) return -1;
-    if (len <= 3) return len * dayCost; // å°‘æ?–ç?‰æ–¼ 3 æ¬¡æ?‚è²·?—¥ç¥¨æ?”è?ƒä¾¿å®?
-    if (len > 12) return monthCost;     // ?? ç‚ºè¶…é?? 12 æ¬¡è²·??ˆç¥¨æ¯”è?ƒä¾¿å®?
+    if (len <= 3) return len * dayCost; // å°‘ï¿½?ï¿½ï¿½?ï¿½æ–¼ 3 æ¬¡ï¿½?ï¿½è²·?ï¿½ï¿½ç¥¨ï¿½?ï¿½ï¿½?ï¿½ä¾¿ï¿½?
+    if (len > 12) return monthCost;     // ??ï¿½ç‚ºè¶…ï¿½?? 12 æ¬¡è²·??ï¿½ç¥¨æ¯”ï¿½?ï¿½ä¾¿ï¿½?
     
     int cost[] = new int[len];
 
@@ -34,7 +34,7 @@ public class Solution03v4P
 
       if (endIdx-startIdx > ratio_WeekAndDays)
       {
-        // å¦‚æ?œé??çºŒå‡ºå·®è?…é?Žä??‘¨ï¼Œå?‡å?ˆè²·ä¸?æ¬¡å‘¨ç¥¨ï?Œå‰©ä¸‹ç?„å?è?•ç??
+        // å¦‚ï¿½?ï¿½ï¿½??çºŒå‡ºå·®ï¿½?ï¿½ï¿½?ï¿½ï¿½??ï¿½ï¿½ï¼Œï¿½?ï¿½ï¿½?ï¿½è²·ï¿½?æ¬¡å‘¨ç¥¨ï¿½?ï¿½å‰©ä¸‹ï¿½?ï¿½ï¿½?ï¿½ï¿½?ï¿½ï¿½??
         if (endIdx >= startIdx + sevenDays) endIdx = startIdx + sevenDays;  
         
         int j = startIdx;

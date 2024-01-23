@@ -1,4 +1,4 @@
-package main.MaxNumOfSiblings;
+package com.example.MaxNumOfSiblings;
 
 public class Solution 
 {

@@ -1,4 +1,4 @@
-package main.TheSmallestPositiveInteger;
+package com.example.TheSmallestPositiveInteger;
 
 public class Solution000
 {

@@ -1,4 +1,4 @@
-package main.SortArrayInNonDecreasingOrderWithSingleSwap;
+package com.example.SortArrayInNonDecreasingOrderWithSingleSwap;
 
 import java.util.Arrays;
 

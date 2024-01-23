@@ -1,4 +1,4 @@
-package main.SplitTextIntoEqualLengthSubstrings;
+package com.example.SplitTextIntoEqualLengthSubstrings;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
