@@ -6,8 +6,6 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import com.example.Maximum_valid_time.Solution;
-
 public class Solution001 implements Solution
 {
   List<List<Integer>> perms = null;
@@ -18,7 +16,7 @@ public class Solution001 implements Solution
     
     int[] nums = { A, B, C, D } ;
     List<List<Integer>> possible = permuteUnique(nums);
-   
+
 //    System.out.println("[");
 //    for (List<Integer> list : possible)
 //      System.out.println(" "+list);
