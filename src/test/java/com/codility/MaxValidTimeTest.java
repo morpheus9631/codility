@@ -1,4 +1,4 @@
-package com.codility.max_valid_time;
+package com.codility;
 
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
