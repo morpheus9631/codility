@@ -1,11 +1,11 @@
-package com.example.CountNum1DigitsIn11PowerOfN;
+package com.codility.count_digitals;
 
 public class Solution01 implements Solution
 {
   public int solution(int N) 
   {
     int cnt = 0;
-    int num = power11(N);
+    int num = powerN(11, N);
     
     String str = Integer.toString(num);
     for (int i=0; i<str.length(); i++) 
@@ -26,9 +26,5 @@ public class Solution01 implements Solution
     }
 
     return result;
-  }
-  
-  private int power11(int N) {
-    return powerN(N, 11);
   }
 }

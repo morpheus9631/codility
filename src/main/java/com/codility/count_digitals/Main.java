@@ -1,17 +1,16 @@
-package com.example.CountNum1DigitsIn11PowerOfN;
+package com.codility.count_digitals;
 
-public class Main {
-
+public class Main 
+{
   public static void main(String[] args)
   {
     System.out.println("Count number of '1' digits in 11 to the power of N\r\n");
     
     Solution01 sol = new Solution01();
-    String format = "N = %d\r\n11^N has %d digital '1'\r\n"; 
+    String format = "N = %d\r\nN has %d digital '1'\r\n"; 
     
-    int N = 3;
+    int N = 5;
     int res = sol.solution(N);
     System.out.println(String.format(format, N, res));
   }
-
 }
