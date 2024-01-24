@@ -3,9 +3,9 @@ package com.codility;
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
-import com.codility.maximum_valid_time.Solution02v2;
+import com.codility.max_valid_time.Solution02v2;
 
-public class MaximumValidTimeTest 
+public class MaxValidTimeTest 
 {
     private int[][] testcaseAry = 
     { 

@@ -3,8 +3,6 @@ package com.example.Maximum_valid_time;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.codility.maximum_valid_time.Solution;
-
 public class Solution002 implements Solution
 {
   public String solution(int A, int B, int C, int D) 

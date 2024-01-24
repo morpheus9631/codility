@@ -1,4 +1,4 @@
-package com.codility.maximum_valid_time;
+package com.codility.max_valid_time;
 
 public class Main
 {

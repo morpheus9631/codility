@@ -1,4 +1,4 @@
-package com.codility.maximum_valid_time;
+package com.codility.max_valid_time;
 
 import java.util.ArrayList;
 import java.util.List;
