@@ -1,4 +1,4 @@
-package com.example.CountNum1DigitsIn11PowerOfN;
+package com.codility.count_digitals;
 
 public class Main {
 
