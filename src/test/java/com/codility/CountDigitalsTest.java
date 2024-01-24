@@ -1,4 +1,3 @@
-
 package com.codility;
 
 import static org.junit.Assert.assertEquals;
