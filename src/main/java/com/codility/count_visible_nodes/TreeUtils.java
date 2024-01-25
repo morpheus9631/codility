@@ -1,4 +1,4 @@
-package com.example.CountVisibleNodesInBinaryTree;
+package com.codility.count_visible_nodes;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

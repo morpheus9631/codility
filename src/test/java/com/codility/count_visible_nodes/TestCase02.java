@@ -1,6 +1,4 @@
-package com.example.CountVisibleNodesInBinaryTree;
-
-import com.example.CountVisibleNodesInBinaryTree.Tree;
+package com.codility.count_visible_nodes;
 
 public class TestCase02 implements TestCase 
 {
