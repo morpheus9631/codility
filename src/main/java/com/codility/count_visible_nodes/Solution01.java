@@ -1,6 +1,6 @@
-package com.example.CountVisibleNodesInBinaryTree;
+package com.codility.count_visible_nodes;
 
-public class Solution 
+public class Solution01 implements Solution
 {
   public int solution(Tree T) 
   {
