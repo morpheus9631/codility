@@ -1,4 +1,4 @@
-package com.example.CountVisibleNodesInBinaryTree;
+package com.codility.count_visible_nodes;
 
 public class Tree 
 {
