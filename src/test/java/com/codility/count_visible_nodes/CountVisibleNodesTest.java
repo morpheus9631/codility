@@ -20,9 +20,9 @@ public class CountVisibleNodesTest
         for (TestCase testcase : testcaseAry)
         {
             Tree tree  = testcase.getCase();
-            int actual = testcase.getReturn(); 
-            int result = sol.solution(tree);
-            assertEquals(actual, result); 
+            int expected = testcase.getReturn(); 
+            int actual = sol.solution(tree);
+            assertEquals(expected, actual); 
         }
     }
 }

@@ -1,9 +1,9 @@
-package com.example.FindSmallestNotExistPositiveInteger;
+package com.codility.smallest_not_exist_positive_int;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Solution000
+public class Solution01 implements Solution
 {
   public int solution(int[] A) 
   {
