@@ -1,4 +1,4 @@
-package com.example.FindSmallestNotExistPositiveInteger;
+package com.codility.smallest_not_exist_positive_int;
 
 import java.util.Arrays;
 
@@ -12,7 +12,7 @@ public class Main
       , {-1,-3}         // 1
     };
 
-    Solution000 sol = new Solution000(); 
+    Solution sol = new Solution01(); 
     String format = "Input: %s\r\nOutput: %d\r\n";
     
     for (int[] A : testdata)
