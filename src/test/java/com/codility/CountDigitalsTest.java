@@ -7,9 +7,12 @@ import com.codility.count_digitals.Solution01;
 
 public class CountDigitalsTest
 {
-    private int[][] testcaseAry = {
-        { 1, 2 }, { 2, 2 }, { 3, 2 },
-        { 4, 2 }, { 5, 3 }, { 6, 3 }
+    private int[] testcaseAry = {
+        1, 2, 3, 4, 5, 6
+    };
+
+    private int[] expectedAry = {
+        2, 2, 2, 2, 3, 3
     };
 
     @Test
@@ -17,12 +20,12 @@ public class CountDigitalsTest
     {
         Solution01 sol = new Solution01();
 
-        for (int[] testcase : testcaseAry)
+        for (int i=0; i<testcaseAry.length; i++)
         {
-            int n = testcase[0];
-            int actual = testcase[1];
-            int result = sol.solution(n);
-            assertEquals(actual, result);
+            int testcase = testcaseAry[i];
+            int expected = expectedAry[i];
+            int actual = sol.solution(testcase);
+            assertEquals(expected, actual);
         }
     }
 }

@@ -9,13 +9,13 @@ public class MaxValidTimeTest
 {
     private int[][] testcaseAry = 
     { 
-      {1,8,3,2},     // Expected: 23:18
-      {2,4,0,0},     // Expected: 20:40
-      {3,0,7,0},     // Expected: 07:30
-      {9,1,9,7}      // Expected: NOT POSSIBLE
+        { 1, 8, 3, 2},
+        { 2, 4, 0, 0},
+        { 3, 0, 7, 0},
+        { 9, 1, 9, 7} 
     };
 
-    private String[] actualAry = { 
+    private String[] expectedAry = { 
         "23:18", "20:40", "07:30", "NOT POSSIBLE"
     };
 
@@ -25,18 +25,18 @@ public class MaxValidTimeTest
     {
         Solution02v2 sol = new Solution02v2();
 
-        int i=0; 
-        for (int[] nums : testcaseAry)
+        for (int i=0; i<testcaseAry.length; i++)
         {
-            int A = nums[0];
-            int B = nums[1];
-            int C = nums[2];
-            int D = nums[3];
-
-            String result = sol.solution(A, B, C, D);
-            String actual = actualAry[i];
-            assertEquals(actual, result);
-            i++;
+            int[] testcase = testcaseAry[i];
+            int A = testcase[0];
+            int B = testcase[1];
+            int C = testcase[2];
+            int D = testcase[3];
+            
+            String expected = expectedAry[i];
+            
+            String actual = sol.solution(A, B, C, D);
+            assertEquals(expected, actual);
         }
     }
 }
