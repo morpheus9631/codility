@@ -12,7 +12,7 @@ public class Main
     
     int[][] testcase = getTestCase(); 
 
-    Solution sol = new Solution02v2();
+    Solution sol = new Solution02();
     
 
     for (int[] nums : testcase)

@@ -3,8 +3,9 @@ package com.codility.max_valid_time;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Solution02v2 implements Solution
+public class Solution02 implements Solution
 {
+  @Override
   public String solution(int A, int B, int C, int D) 
   {
     int[] nums = { A, B, C, D } ;

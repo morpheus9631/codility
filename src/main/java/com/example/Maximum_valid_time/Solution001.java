@@ -6,9 +6,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import com.example.Maximum_valid_time.Solution;
-
-public class Solution001 implements Solution
+public class Solution001
 {
   List<List<Integer>> perms = null;
 

@@ -1,6 +1,5 @@
 package com.codility.max_sum_two_disjoin_subsets;
 
-import java.util.Arrays;
 
 public class Solution
 {
@@ -22,8 +21,8 @@ public class Solution
 				newA[i-j] = -1;
 			}
 			
-			System.out.println(dp_k);
-			System.out.println(Arrays.toString(newA));
+			// System.out.println(dp_k);
+			// System.out.println(Arrays.toString(newA));
 
 			int[] dp_l = new int[len];
 			for (int j=L-1; j<len; j++) 
@@ -35,7 +34,7 @@ public class Solution
 				dp_l[j] = ((sum < newA[j]) ? -1 : sum);	
 			}
 
-			System.out.println(Arrays.toString(dp_l));
+			// System.out.println(Arrays.toString(dp_l));
 			
 			for (int j=0; j<len; j++)
 			{
