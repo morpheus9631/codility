@@ -3,7 +3,9 @@ package com.codility;
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
-import com.codility.max_valid_time.Solution02v2;
+import com.codility.max_valid_time.Solution;
+import com.codility.max_valid_time.Solution01;
+import com.codility.max_valid_time.Solution02;
 
 public class MaxValidTimeTest 
 {
@@ -19,11 +21,30 @@ public class MaxValidTimeTest
         "23:18", "20:40", "07:30", "NOT POSSIBLE"
     };
 
+    @Test
+    public void testSolution01()
+    {
+        Solution sol = new Solution01();
+        for (int i=0; i<testcaseAry.length; i++)
+        {
+            int[] testcase = testcaseAry[i];
+            int A = testcase[0];
+            int B = testcase[1];
+            int C = testcase[2];
+            int D = testcase[3];
+            
+            String expected = expectedAry[i];
+            
+            String actual = sol.solution(A, B, C, D);
+            assertEquals(expected, actual);
+        }
+    }
+
 
     @Test
-    public void testSolution()
+    public void testSolution02()
     {
-        Solution02v2 sol = new Solution02v2();
+        Solution sol = new Solution02();
 
         for (int i=0; i<testcaseAry.length; i++)
         {
