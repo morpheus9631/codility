@@ -1,6 +1,6 @@
-package com.example.SortArrayInNonDecreasingOrderWithSingleSwap;
+package com.codility.sort_array_with_single_swap;
 
-public class Solution003
+public class Solution
 {
   public boolean solution(int[] A) 
   {
