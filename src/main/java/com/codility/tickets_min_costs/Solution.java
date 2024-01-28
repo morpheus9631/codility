@@ -1,4 +1,4 @@
-package com.example.TicketsNeededToGetMinimumCosts;
+package com.codility.tickets_min_costs;
 
 public interface Solution
 {

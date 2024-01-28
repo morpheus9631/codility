@@ -1,6 +1,6 @@
-package com.example.TicketsNeededToGetMinimumCosts;
+package com.codility.tickets_min_costs;
 
-public class Solution003 implements Solution
+public class Solution03 implements Solution
 {
   public int solution(int[] A) 
   {
