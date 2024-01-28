@@ -3,7 +3,8 @@ package com.codility;
 import org.junit.Test;
 
 import com.codility.count_visible_nodes.Solution;
-import com.codility.count_visible_nodes.Solution01;
+import com.codility.count_visible_nodes.TestCase;
+import com.codility.count_visible_nodes.Solution;
 import com.codility.count_visible_nodes.Tree;
 
 import static org.junit.Assert.assertEquals;
@@ -12,32 +13,31 @@ import org.junit.Before;
 
 public class CountVisibleNodesTest 
 {
-    private Tree[] testcaseAry = new Tree[2];
-
-    private int[] expectedAry = { 4, 2 };
+    private TestCase[]  testcaseAry;
 
     @Before
     public void setup()
     {
-        testcaseAry[0] = createTree01();
-        testcaseAry[1] = createTree02();
+        testcaseAry = new TestCase[2];
+        testcaseAry[0] = new TestCase(buildTree01(), 4);
+        testcaseAry[1] = new TestCase(buildTree02(), 2);
     }
 
     @Test
     public void test()
     {
-        Solution sol = new Solution01();
+        Solution sol = new Solution();
 
-        for (int i=0; i<testcaseAry.length; i++)
+        for (TestCase tc : testcaseAry)
         {
-            Tree testcase = testcaseAry[i];
-            int expected = expectedAry[i];
-            int actual = sol.solution(testcase);
+            Tree tree = tc.getTree();
+            int expected = tc.getExpected();
+            int actual = sol.solution(tree);
             assertEquals(expected, actual);
         }
     }
 
-    private Tree createTree01()
+    private Tree buildTree01()
     {
         Tree T = new Tree();
         T.x = 5;
@@ -60,7 +60,7 @@ public class CountVisibleNodesTest
         return T;
     }
 
-    private Tree createTree02()
+    private Tree buildTree02()
     {
         Tree T = new Tree();
         T.x = 8;

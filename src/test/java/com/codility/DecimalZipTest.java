@@ -1,41 +1,41 @@
 package com.codility;
 
 import static org.junit.Assert.assertEquals;
+
+import org.junit.Before;
 import org.junit.Test;
 
-import com.codility.decimal_zip.Solution01;
+import com.codility.decimal_zip.Solution;
+import com.codility.decimal_zip.TestCase;
 
 public class DecimalZipTest
 {
-    private static int[][] testcaseAry = 
-    { 
-        { 12, 56 },
-        { 56, 12 },
-        { 12345, 678 },
-        { 123, 67890 },
-        { 1234, 0 },
-        { 12345, 678 },
-        { 12345, 67890 },
-        { 1234567890, 1 },
-        { 123456, 123456 }
-    };
-
-    private int[] expectedAry = {
-        1526, 5162, 16273845, 16273890,
-        10234, 16273845, -1, -1, 
-        -1
-    };
+    private TestCase[] testcaseAry;
+    
+    @Before
+    public void setupTestCase()
+    {
+        testcaseAry = new TestCase[7];
+        testcaseAry[0] = new TestCase(12, 56, 1526);
+        testcaseAry[1] = new TestCase(56, 12, 5162);
+        testcaseAry[2] = new TestCase(123, 67890, 16273890);
+        testcaseAry[3] = new TestCase(1234, 0, 10234);
+        testcaseAry[4] = new TestCase(12345, 678, 16273845);
+        testcaseAry[4] = new TestCase(12345, 67890, -1);
+        testcaseAry[5] = new TestCase(123456, 123456, -1);
+        testcaseAry[6] = new TestCase(1234567890, 1, -1);
+    }
 
     @Test
     public void testZip()
     {
-        Solution01 sol = new Solution01();
+        Solution sol = new Solution();
 
-        for (int i=0; i<testcaseAry.length; i++)
+        for (TestCase tc : testcaseAry)
         {
-            int A = testcaseAry[i][0];
-            int B = testcaseAry[i][1];
-            int expected = expectedAry[i];
+            int A = tc.getA();
+            int B = tc.getB();
+            int expected = tc.getExpected();
             int actual = sol.solution(A, B);
             assertEquals(expected, actual);
         }

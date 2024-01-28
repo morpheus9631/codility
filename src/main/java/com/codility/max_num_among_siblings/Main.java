@@ -9,13 +9,14 @@ public class Main
         Solution sol = new Solution();
         String format = "N = %d, return %d\r\n";
 
-        int N = 213;
-        int res = sol.solution(N);
-        System.out.println(String.format(format, N, res));
-        
-        N = 553;
-        res = sol.solution(N);
-        System.out.println(String.format(format, N, res));
+        for (int N : getTestCase())
+        {
+            int result = sol.solution(N);
+            System.out.println(String.format(format, N, result));
+        }
     }
 
+    public static int[] getTestCase() {
+        return new int[] { 213, 533 };
+    }
 }

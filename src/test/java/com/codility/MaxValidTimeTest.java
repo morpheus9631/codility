@@ -1,39 +1,42 @@
 package com.codility;
 
 import static org.junit.Assert.assertEquals;
+
+import org.junit.Before;
 import org.junit.Test;
 
 import com.codility.max_valid_time.Solution;
 import com.codility.max_valid_time.Solution01;
 import com.codility.max_valid_time.Solution02;
+import com.codility.max_valid_time.TestCase;
 
 public class MaxValidTimeTest 
 {
-    private int[][] testcaseAry = 
-    { 
-        { 1, 8, 3, 2},
-        { 2, 4, 0, 0},
-        { 3, 0, 7, 0},
-        { 9, 1, 9, 7} 
-    };
+    private TestCase[] testcaseAry;
 
-    private String[] expectedAry = { 
-        "23:18", "20:40", "07:30", "NOT POSSIBLE"
-    };
+    @Before
+    public void setupTestCase()
+    {
+        testcaseAry = new TestCase[4];
+        testcaseAry[0] = new TestCase( new int[] {1,8,3,2}, "23:18");
+        testcaseAry[1] = new TestCase( new int[] {2,4,0,0}, "20:40");
+        testcaseAry[2] = new TestCase( new int[] {3,0,7,0}, "07:30");
+        testcaseAry[3] = new TestCase( new int[] {9,1,9,7}, "NOT POSSIBLE");
+    }
 
     @Test
     public void testSolution01()
     {
         Solution sol = new Solution01();
-        for (int i=0; i<testcaseAry.length; i++)
+        for (TestCase tc : testcaseAry)
         {
-            int[] testcase = testcaseAry[i];
-            int A = testcase[0];
-            int B = testcase[1];
-            int C = testcase[2];
-            int D = testcase[3];
+            int[] nums = tc.getNums();
+            int A = nums[0];
+            int B = nums[1];
+            int C = nums[2];
+            int D = nums[3];
             
-            String expected = expectedAry[i];
+            String expected = tc.getExpected();
             
             String actual = sol.solution(A, B, C, D);
             assertEquals(expected, actual);
@@ -45,16 +48,15 @@ public class MaxValidTimeTest
     public void testSolution02()
     {
         Solution sol = new Solution02();
-
-        for (int i=0; i<testcaseAry.length; i++)
+        for (TestCase tc : testcaseAry)
         {
-            int[] testcase = testcaseAry[i];
-            int A = testcase[0];
-            int B = testcase[1];
-            int C = testcase[2];
-            int D = testcase[3];
+            int[] nums = tc.getNums();
+            int A = nums[0];
+            int B = nums[1];
+            int C = nums[2];
+            int D = nums[3];
             
-            String expected = expectedAry[i];
+            String expected = tc.getExpected();
             
             String actual = sol.solution(A, B, C, D);
             assertEquals(expected, actual);
