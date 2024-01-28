@@ -1,4 +1,4 @@
-package com.example.WinterAndSummer;
+package com.codility.winter_an_summer;
 
 public class Solution 
 {
