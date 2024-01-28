@@ -6,21 +6,21 @@ public class Main
     {
         System.out.println("Count Visible Nodes In Binary Tree\r\n");
     
-        Solution sol = new Solution01();
-        String format = "A[] = %s, \r\nreturn %d, \r\nactual %d";
+        Solution sol = new Solution();
     
-        Tree tree = getCase();
-        int result = sol.solution(tree);
-        int actual = getReturn();
+        Tree tree = getTree();
+        int actual = sol.solution(tree);
+
+        String format = "A[] = %s, \r\nactual %d";
         System.out.println(
             String.format(  format, 
                             TreeUtils.toList(tree), 
-                            result,
                             actual)
         );
     }
 
-    public static Tree getCase() {
+    public static Tree getTree() 
+    {
         Tree T = new Tree();
         T.x = 5;
 
@@ -40,10 +40,6 @@ public class Main
         T.r.l.x = 1;
 
         return T;
-    }
-    
-    public static int getReturn() {
-        return 4;
     }
 }
 

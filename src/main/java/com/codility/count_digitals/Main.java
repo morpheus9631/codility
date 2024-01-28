@@ -6,10 +6,10 @@ public class Main {
   {
     System.out.println("Count number of '1' digits in 11 to the power of N\r\n");
     
-    Solution01 sol = new Solution01();
+    Solution sol = new Solution();
     String format = "N = %d\r\n11^N has %d digital '1'\r\n"; 
     
-    int N = 3;
+    int N = 7;
     int res = sol.solution(N);
     System.out.println(String.format(format, N, res));
   }

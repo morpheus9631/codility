@@ -1,32 +1,36 @@
 package com.codility;
 
 import static org.junit.Assert.assertEquals;
+
+import org.junit.Before;
 import org.junit.Test;
 
 import com.codility.smallest_not_exist_positive_int.Solution;
-import com.codility.smallest_not_exist_positive_int.Solution01;
+import com.codility.smallest_not_exist_positive_int.TestCase;
 
 public class SmallestNotExistPositiveIntTest 
 {
-    public int[][] testcaseAry =  {
-        {  1,  3, 6, 4, 1, 2 },
-        {  1,  2, 3},
-        { -1, -3}
-    };
-
-    private int[] expectedAry = { 5, 4, 1 };
+    private TestCase[]  testcaseAry;
+    
+    @Before
+    public void setupTestCaseAry() 
+    {
+        testcaseAry = new TestCase[3];
+        testcaseAry[0] = new TestCase(new int[] {1,3,6,4,1,2}, 5);
+        testcaseAry[1] = new TestCase(new int[] {1,2,3}, 4);
+        testcaseAry[2] = new TestCase(new int[] {-1,-3}, 1);
+    }
 
     @Test
     public void testSoultion()
     {
-        Solution sol = new Solution01(); 
+        Solution sol = new Solution(); 
     
-        for (int i=0; i<testcaseAry.length; i++)
+        for (TestCase tc : testcaseAry)
         {
-            int[] testcase = testcaseAry[i];
-            int expected = expectedAry[i];
-            int actual = sol.solution(testcase);
-            
+            int[] nums = tc.getNums();
+            int expected = tc.getExpected();
+            int actual = sol.solution(nums);
             assertEquals(expected, actual);
         }
     }

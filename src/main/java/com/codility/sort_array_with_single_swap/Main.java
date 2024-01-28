@@ -6,21 +6,15 @@ public class Main
 {
     public static void main(String[] args)
     {
-        int[][] testdata = new int[][] {
-            {1,5,3,3,7}, {1,3,5,3,4}, {1,3,5}
-        };
+        int[] testcase = new int[] {1,5,3,3,7};
 
         Solution sol = new Solution(); 
 
         String format = "Input: %s\r\nOutput: %b\r\n";
         
-        for (int[] A : testdata)
-        {
-            boolean res = sol.solution(A);
-
-            String inStr = Arrays.toString(A); 
-            System.out.println(String.format(format, inStr, res));
-        }
+        String inStr = Arrays.toString(testcase); 
+        boolean result = sol.solution(testcase);
+        System.out.println(String.format(format, inStr, result));
     }
 }
 
