@@ -33,4 +33,4 @@ public class Main
         array[3] = new TestCase( new int[] {9,1,9,7}, "NOT POSSIBLE");
         return array;
     }
-}        
+}

@@ -1,5 +1,5 @@
 package com.codility.count_digitals;
-        
+
 public class Solution
 {
     public int solution(int N) 
