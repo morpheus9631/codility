@@ -1,4 +1,4 @@
-package com.example.TicketsNeededToGetMinimumCosts;
+package com.codility.tickets_min_costs;
 
 /*
  * Reference:
@@ -9,7 +9,7 @@ package com.example.TicketsNeededToGetMinimumCosts;
  * 
  */
 
-public class Solution001 implements Solution
+public class Solution01 implements Solution
 {
   public int solution(int[] A) 
   {
