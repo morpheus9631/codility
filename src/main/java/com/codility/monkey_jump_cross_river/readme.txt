@@ -1,4 +1,6 @@
-  
+
+# MonkeyJumpCrossRiver
+
   A monkey is on one bank (position −1) of a river and wants to get to the opposite bank (position N).
   The monkey can jump any (integer) distance between 1 and D. 
   If D is less than or equal to N then the monkey cannot jump right across the river. 

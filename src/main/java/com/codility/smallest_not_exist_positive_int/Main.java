@@ -4,24 +4,19 @@ import java.util.Arrays;
 
 public class Main
 {
-  public static void main(String[] args)
-  {
-    int[][] testdata = new int[][] {
-        {1,3,6,4,1,2}   // 5
-      , {1,2,3}         // 4
-      , {-1,-3}         // 1
-    };
-
-    Solution sol = new Solution01(); 
-    String format = "Input: %s\r\nOutput: %d\r\n";
-    
-    for (int[] A : testdata)
+    public static void main(String[] args)
     {
-      int res = sol.solution(A);
-    
-      String inStr = Arrays.toString(A); 
-      System.out.println(String.format(format, inStr, res));
-    }
-  }
+        TestCase tc = new TestCase(
+            new int[] {1,3,6,4,1,2}, 5
+        );
 
+        Solution sol = new Solution(); 
+        String format = "Input: %s\r\nOutput: %d\r\n";
+        
+        int[] A = tc.getNums();
+        int result = sol.solution(A);
+
+        String inStr = Arrays.toString(A); 
+        System.out.println(String.format(format, inStr, result));
+    }
 }

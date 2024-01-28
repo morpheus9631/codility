@@ -8,6 +8,7 @@ public class Main
 	public static void main(String[] args)
 	{
 		Solution sol = new Solution();
+
 		Testcase testcase = new Testcase(
 			new int[] { 6, 1, 4, 6, 3, 2, 7, 4 }, 
 			3, 

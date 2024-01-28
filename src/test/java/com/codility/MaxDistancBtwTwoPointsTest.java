@@ -4,10 +4,10 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
-import com.codility.max_distance.Solution;
-import com.codility.max_distance.Solution01;
+import com.codility.max_distance_btw_two_points.Solution;
+import com.codility.max_distance_btw_two_points.Solution01;
 
-public class MaxDistancTwoPointsTest 
+public class MaxDistancBtwTwoPointsTest 
 {
     private int[][] testcaseAry = {
         { 1, 1, 2, 3 },
