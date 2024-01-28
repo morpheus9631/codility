@@ -1,4 +1,4 @@
-package com.example.MonkeyJumpCrossRiver;
+package com.codility.monkey_jump_cross_river;
 
 import java.util.Arrays;
 
