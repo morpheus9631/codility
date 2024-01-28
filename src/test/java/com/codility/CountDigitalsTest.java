@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 package com.codility;
 
 import static org.junit.Assert.assertEquals;
@@ -22,27 +21,10 @@ public class CountDigitalsTest
         testcaseAry[2] = new TestCase(5, 3);
         testcaseAry[3] = new TestCase(6, 3);
     }
-=======
-
-package com.codility;
-
-import static org.junit.Assert.assertEquals;
-import org.junit.Test;
-
-import com.codility.count_digitals.Solution01;
-
-public class CountDigitalsTest
-{
-    private int[][] testcaseAry = {
-        { 1, 2 }, { 2, 2 }, { 3, 2 },
-        { 4, 2 }, { 5, 3 }, { 6, 3 }
-    };
->>>>>>> c80f9a401d9e6a4e6e781885149661bcf7225d8e
 
     @Test
     public void testCountDigital()
     {
-<<<<<<< HEAD
         Solution sol = new Solution();
 
         for (TestCase tc: testcaseAry)
@@ -51,16 +33,6 @@ public class CountDigitalsTest
             int expected = tc.getExpected();
             int actual = sol.solution(N);
             assertEquals(expected, actual);
-=======
-        Solution01 sol = new Solution01();
-
-        for (int[] testcase : testcaseAry)
-        {
-            int n = testcase[0];
-            int actual = testcase[1];
-            int result = sol.solution(n);
-            assertEquals(actual, result);
->>>>>>> c80f9a401d9e6a4e6e781885149661bcf7225d8e
         }
     }
 }
