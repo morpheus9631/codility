@@ -43,7 +43,6 @@ public class MaxValidTimeTest
         }
     }
 
-
     @Test
     public void testSolution02()
     {
