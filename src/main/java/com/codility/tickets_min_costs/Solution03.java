@@ -12,7 +12,13 @@ public class Solution03 implements Solution
 
     int len = A.length;
     if (len == 0) return -1;
+<<<<<<< HEAD:src/main/java/com/codility/tickets_min_costs/Solution03.java
     if (len <= 3) return len * dayCost;
+=======
+
+    // if total traveling days lower than 3, buy individual day ticket is better
+    if (len <= 3) return len * dayCost; 
+>>>>>>> c80f9a401d9e6a4e6e781885149661bcf7225d8e:src/test/java/com/example/Tickets_Needed_To_Get_Minimum_Costs/Solution03v4.java
     
     int cost[] = new int[len];
 
@@ -24,6 +30,12 @@ public class Solution03 implements Solution
       
       if (endIdx-startIdx > ratio_WeekAndDays)
       {
+<<<<<<< HEAD:src/main/java/com/codility/tickets_min_costs/Solution03.java
+=======
+        /* if continued traveling days more than 7, purchase week ticket first, 
+         * then consequence deal with the remainder traveling days
+         */
+>>>>>>> c80f9a401d9e6a4e6e781885149661bcf7225d8e:src/test/java/com/example/Tickets_Needed_To_Get_Minimum_Costs/Solution03v4.java
         if (endIdx >= startIdx + sevenDays) endIdx = startIdx + sevenDays;  
         
         int j = startIdx;

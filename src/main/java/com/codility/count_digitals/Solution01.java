@@ -1,6 +1,5 @@
 package com.codility.count_digitals;
 
-<<<<<<< HEAD
 public class Solution
 {
   public int solution(int N) 
@@ -28,9 +27,4 @@ public class Solution
 
     return result;
   }
-=======
-public interface Solution 
-{
-    public int solution(int N);
->>>>>>> c80f9a401d9e6a4e6e781885149661bcf7225d8e
 }
