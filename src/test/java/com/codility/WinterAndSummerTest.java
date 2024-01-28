@@ -1,9 +1,6 @@
 package com.codility;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertThat;
-
-import java.util.Arrays;
 
 import org.junit.Before;
 import org.junit.Test;
