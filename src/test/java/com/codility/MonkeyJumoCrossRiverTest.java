@@ -20,7 +20,7 @@ public class MonkeyJumoCrossRiverTest
         aryList.add(new TestCase(3, new int[] { 1, -1, 0, 2, 3, 5 }, 2));
         aryList.add(new TestCase(1, new int[] { 3, 2, 1 }, 3));
         aryList.add(new TestCase(3, new int[] { 1, 2, 3, 4, -1, -1, -1 }, -1));
-        testcaseAry = aryList.toArray(new TestCase[0]);
+        testcaseAry = aryList.toArray(new TestCase[aryList.size()]);
     }
 
     @Test
