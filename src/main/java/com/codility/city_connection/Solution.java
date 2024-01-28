@@ -1,4 +1,4 @@
-package com.example.city_connection;
+package com.codility.city_connection;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -7,7 +7,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Set;
 
-public class Solution01 implements Solution
+public class Solution
 {
 	public int[] solution(int[] T) 
 	{
