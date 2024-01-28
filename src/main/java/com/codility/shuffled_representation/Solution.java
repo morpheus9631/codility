@@ -1,6 +1,6 @@
-package com.example.ShuffledRepresentation;
+package com.codility.shuffled_representation;
 
-public class Solution002
+public class Solution
 {
   public int solution(int A) 
   {
